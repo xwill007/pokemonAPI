@@ -47,6 +47,10 @@ class PokemonAdapter (
 
                 textViewItem.text = item
 
+                if(pokemon.url != null) {
+                    Picasso.get().load("https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/" + item + ".png").into(binding.pictureImageView)
+                }
+
 
             }
         }
